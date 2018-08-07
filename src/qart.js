@@ -70,9 +70,9 @@ class QArt {
       var coverImage = new Image()
       coverImage.src = self.imagePath
 
-      // handle image by fillType
-      var imageCanvas = Util.createCanvas(imageSize - padding * 2, coverImage, self.fillType)
-      coverImage.src = imageCanvas.toDataURL()
+      // handle image by fillType ← bug
+      // var imageCanvas = Util.createCanvas(imageSize - padding * 2, coverImage, self.fillType)
+      // coverImage.src = imageCanvas.toDataURL()
 
       var resultCanvas = Util.createCanvas(imageSize, qrImage)
       var qrCanvas = Util.createCanvas(imageSize, qrImage)
